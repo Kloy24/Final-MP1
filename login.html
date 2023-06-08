@@ -34,7 +34,7 @@
         box-shadow: 0 0 8px rgb(255, 255, 255);
         overflow: hidden;
       }
-      .container{ 
+      .sub-container{ 
         width: 820px;
         height: 100%;
         position: absolute;
@@ -49,22 +49,22 @@
          padding: 30px;
          height: 100%;
       }
-      #slide:checked ~ .container{
+      #slide:checked ~ .sub-container{
         left: -410px;
         position: absolute;
       }
-      .container .text{
+      .sub-container .text{
         font-size: 35px;
         font-weight: 600;
         text-align: center;
       }
-      .container form{
+      .sub-container form{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
       }
-      .container form .data{
+      .sub-container form .data{
         height: 45px;
         width: 100%;
         margin: 20px 0;
@@ -149,12 +149,15 @@
       input[type="checkbox"]{
         display: none;
       }
+      .navbar{
+        padding: 0!important;
+      }
     </style>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
               <img src="3.png" alt="NKstreethype" width="70vh" height="m-auto">
             </a>
@@ -193,7 +196,7 @@
     <section class="login-form">
       <div class="main-container">
         <input type="checkbox" id="slide">
-        <div class="container">
+        <div class="sub-container">
           <div class="login-container">
             <div class="text">Login</div>
             <form action="#">
@@ -256,20 +259,20 @@
 
 
 <footer class="bg-dark text-white py-3">
-    <div class="container-fluid">
+    <div class="container-fluid text">
       <div class="row align-items-center">
-        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col-sm d-flex justify-content-center align-items-center">
           <a class="navbar-brand" href="index.html">
             <img src="3.png" alt="NKstreethype" width="100vh" height="m-auto">
           </a>
         </div>
-        <div class="col">
+        <div class="col-sm">
           <h5>LINKS</h5>
           <a class="d-block text-white" href="store.html">Store</a>
           <a class="d-block text-white" href="aboutus.html">About Us</a>
           <a class="d-block text-white" href="store.html">Trending</a>
         </div>
-        <div class="col">
+        <div class="col-sm">
             <h5>CONTACT</h5>
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Type your email here" aria-label="Type your email here" aria-describedby="basic-addon2">
